@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+
+    <style>
+        .grid1 {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 80px auto 80px;
+            grid-template-areas: 
+            "header header header"
+            "asideEsquerra main asideDreta"
+            "footer footer footer";
+
+        }
+        .header {
+            grid-area: header;
+            background-color: blueviolet;
+            display: flex;
+        }
+        .asideEsquerra {
+            grid-area: asideEsquerra;
+            background-color: blueviolet;
+            display: flex;
+        }
+        .main {
+            grid-area: main;
+            background-color: blueviolet;
+            display: flex;
+        }
+        .asideDreta {
+            grid-area: asideDreta;
+            background-color: blueviolet;
+            display: flex;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: blueviolet;
+            display: flex;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="grid1">
+        <header class="header">Header</header>
+        <aside class="asideEsquerra">Aside</aside>
+        <main class="main">Main</main>
+        <aside class="asideDreta">Aside</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

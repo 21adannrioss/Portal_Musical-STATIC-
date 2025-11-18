@@ -1,0 +1,61 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+
+/*      HEADER      */
+header {
+    background: #202020;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item a {
+    color: #ff0a0a;
+    text-decoration: none;
+}
+/*      FIN HEADER      */
+
+/*      MAIN      */
+
+
+
+
+
+/*      FIN MAIN      */
+
+/*      FOOTER      */
+footer {
+    background: #202020;
+    color: #ccc;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer-titulo {
+    margin: 0px 0px 10px;
+}
+
+.footer-links {
+    color: #ff0a0a;
+    text-decoration: none;
+}
+
+.footer-info {
+    margin: 7px 0;
+}
+/*      FIN FOOTER      */
