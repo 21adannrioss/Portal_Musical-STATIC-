@@ -1,15 +1,26 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0px;
+    margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
-/*      HEADER      */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f0f12;
+    color: #eee;
+    line-height: 1.5;
+    font-size: 16px;
+    
+}
+
+
+/* ===================================================== */
+/*                       HEADER                          */
+/* ===================================================== */
 header {
-    background: #202020;
-    color: #fff;
-    padding: 20px;
+    background: #1a1a23;
+    padding: 1.5rem 2rem;
+    border-bottom: 2px solid #2f2f46;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +28,7 @@ header {
 
 header h1 {
     font-size: 24px;
-    letter-spacing: 1px;   
+    letter-spacing: 1px;
 }
 
 .header-h1 {
@@ -27,321 +38,546 @@ header h1 {
     color: transparent;
 }
 
-nav .menu {
+.menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .menu-item a {
-    color: #ffffff;
     text-decoration: none;
-}
-/*      FIN HEADER      */
-
-
-
-
-
-
-
-
-/*      MAIN      */
-
-
-/*      Configuración general      */
-body {
-    margin: 0;
-    padding: 0;
-    background: #0d0f12;
-    font-family: "Inter", sans-serif;
-    color: #fff;
+    color: #eee;
+    padding: 0.3rem 0.5rem;
+    transition: 0.2s ease;
 }
 
-main {
-    width: 95%;
-    max-width: 1300px;
-    margin: auto;
+.menu-item a:hover {
+    color: #4dd7ff;
 }
-/*      Fin Configuración general      */
 
 
+/* ===================================================== */
+/*                       PORTADA                         */
+/* ===================================================== */
+.portada, .lanzamientos, .artistas, .festivales, .aside, .top {
+    padding: 2rem;
+}
 
-
-
-/*      PORTADA      */
 .portada {
-    background: linear-gradient(180deg, #28132f, #0d0f12);
-    padding: 40px;
-    display: flex;
+    background: linear-gradient(135deg, #14141d, #0d0d12);
+    text-align: center;
+    border-bottom: 1px solid #33334a;
 }
 
 .portada-titulo {
-    font-size: 38px;
-    font-weight: 800;
-    line-height: 1.2;
-}
-
-.portada-articulo {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-}
-
-.portada-img {
-    width: 45%;
-    height: auto;
-    border-radius: 18px;
-    object-fit: cover;
+    color: #4dd7ff;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
 }
 
 .portada-desc {
-    font-size: 17px;
-    opacity: 0.9;
+    margin-bottom: 0.5rem;
 }
 
-.portada-tags {
-    opacity: 0.7;
-    margin-top: 10px;
-}
-/*      FIN PORTADA      */
-
-
-
-
-
-/*      LANZAMIENTOS      */
-.lanzamientos {
-    margin-top: 50px;
-    background: linear-gradient(180deg, #034b55, #0d0f12);
-    padding: 35px;
-    border-radius: 25px;
+.portada-links a {
+    color: #ff2f8b;
+    text-decoration: none;
 }
 
+.portada-img {
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 400px;
+    display: block;
+    margin-inline: auto;
+    box-shadow: 0 0 12px rgba(255, 47, 139, 0.4);
+}
+
+
+/* ===================================================== */
+/*                    LANZAMIENTOS                       */
+/* ===================================================== */
 .lanzamientos-titulo {
-    font-size: 28px;
-    font-weight: 700;
+    color: #ff2f8b;
+    margin-bottom: 0.3rem;
+    margin: 0px 0px -10px;
+}
+
+.lanzamientos-link {
+    text-decoration: none;
+    color: #4dd7ff;
 }
 
 .lanzamientos-ver {
     text-align: right;
-    margin-top: -20px;
 }
 
 .lanzamientos-grid {
-    margin-top: 25px;
+    margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
 }
 
 .lanzamiento-item {
-    background: #16191f;
-    padding: 15px;
-    border-radius: 18px;
-    box-shadow: 0 0 20px #0005;
+    background: #191922;
+    padding: 1rem;
+    border-radius: 10px;
     text-align: center;
+    transition: 0.2s ease;
+}
+
+.lanzamiento-item:hover {
+    background: #232334;
+    transform: translateY(-4px);
 }
 
 .lanzamiento-img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 12px;
+    width: 100px;
+    border-radius: 6px;
 }
-/*      FIN LANZAMIENTOS      */
+
+.lanzamiento-nombre {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #4dd7ff;
+}
+
+.lanzamiento-masinfo {
+    text-decoration: none;
+    color: #ff2f8b;
+}
 
 
+/* ===================================================== */
+/*                  ARTISTAS DESTACADOS                  */
+/* ===================================================== */
 
+.artistas-titulo {
+    color: #ff2f8b;
+    margin-bottom: 0.3rem;
+    margin: 0px 0px -10px;
+}
 
+.artistas-link {
+    text-decoration: none;
+    color: #4dd7ff;
 
-/*      ARTISTAS DESTACADOS      */
-.artistas {
-    margin-top: 50px;
-    background: linear-gradient(180deg, #52123f, #0d0f12);
-    padding: 35px;
-    border-radius: 25px;
 }
 
 .artistas-ver {
     text-align: right;
-    margin-top: -20px;
 }
 
 .artistas-lista {
-    list-style: none;
-    margin: 25px 0 0;
-    padding: 0;
+    margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
 }
 
 .artista-item {
-    background: #16191f;
-    padding: 15px;
-    border-radius: 18px;
+    background: #191922;
+    padding: 1rem;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 20px #0005;
+    transition: 0.2s ease;
+}
+
+.artista-item:hover {
+    background: #232334;
+    transform: translateY(-4px);
 }
 
 .artista-img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-/*      FIN ARTISTAS DESTACADOS      */
-
-
-
-
-
-/*      FESTIVALES + ASIDE (Misma fila)      */
-.festivales {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 3fr 1.2fr; /* Festivales grandes + Aside derecho */
-    gap: 30px;
+    width: 100px;
+    border-radius: 6px;
 }
 
-/* Columna izquierda: tarjetas de festivales */
+.artista-nombre {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #4dd7ff;
+}
+
+.artista-genero {
+    color: #fff;
+}
+
+
+/* ===================================================== */
+/*                       FESTIVALES                      */
+/* ===================================================== */
+
+/* ======== FESTIVALES (misma estética que LANZAMIENTOS) ======== */
+
 .festivales-titulo {
-    grid-column: 1 / 3;
-    font-size: 28px;
-    margin-bottom: 10px;
+    color: #ff2f8b;
+    margin-bottom: 0.3rem;
+    margin: 0 0 -10px;
 }
 
 .festivales-ver {
-    grid-column: 1 / 3;
     text-align: right;
-    margin-top: -30px;
+}
+
+.festivales-link {
+    text-decoration: none;
+    color: #4dd7ff;
+
+}
+
+.festivales-lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+
+    display: grid;
+    grid-template-columns: auto auto; /* ancho fijo para 2 columnas */
+    grid-template-rows: auto auto;         /* 2 filas: primera fila y segunda fila */
+    gap: 1.5rem;
+
 }
 
 .festival-item {
-    background: #16191f;
-    border-radius: 18px;
-    padding: 20px;
-    box-shadow: 0 0 20px #0005;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    background: #191922;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.2s ease;
 }
 
-/* 3 tarjetas en fila */
-.festivales {
-    margin-top: 50px;
-}
-.festivales > article {
-    display: inline-block;
-    width: 32%;
-    vertical-align: top;
+.festival-item:hover {
+    background: #232334;
+    transform: translateY(-4px);
 }
 
-/* Imagen del festival */
 .festival-img {
-    width: 100%;
-    height: 170px;
-    border-radius: 12px;
-    object-fit: cover;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    display: block;        /* necesario para que margin funcione */
+    margin: 0 auto;        /* centra horizontalmente */
+    object-fit: cover;     /* recorta la imagen si no tiene proporción 250x200 */
+}
+
+.festival-nombre {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #4dd7ff;
 }
 
 .festival-detalle {
-    margin-top: 10px;
-    opacity: 0.85;
+    margin-top: 0.4rem;
+    color: #ccc;
+    font-size: 0.9rem;
 }
 
 .festival-tags {
-    opacity: 0.7;
-    font-size: 14px;
-    margin-top: 7px;
+    color: #ff2f8b;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
 }
 
-/* Columna derecha: aside */
+
+
+/* ===================================================== */
+/*                         ASIDE                         */
+/* ===================================================== */
+
+.festivales-container {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 1.5rem;
+    align-items: start;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .festivales-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .aside {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1rem;
 }
 
 .aside-item {
-    background: #16191f;
-    padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0 0 20px #0005;
+    background: #191922;
+    padding: 1rem;
+    border-radius: 10px;
     text-align: center;
+    transition: 0.2s ease;
+}
+
+.aside-item:hover {
+    background: #232334;
+    transform: translateY(-3px);
 }
 
 .aside-img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 12px;
+    border-radius: 6px;
 }
-/*      FIN FESTIVALES + ASIDE      */
+
+.aside-titulo {
+    font-size: 1.1rem;
+    color: #4dd7ff;
+    margin-top: 0.5rem;
+}
+
+.aside-desc {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.aside-link {
+    color: #ff2f8b;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
 
 
 
+/* ===================================================== */
+/*                         TOP                           */
+/* ===================================================== */
 
-
-/*      TOP 10      */
-.top {
-    margin-top: 50px;
-    padding: 35px;
-    background: #111318;
-    border-radius: 25px;
-    box-shadow: 0 0 20px #0005;
+.top-titulo {
+    color: #ff2f8b;
+    margin: -10px 0px -10px;
+    
 }
 
 .top-ver {
     text-align: right;
-    margin-top: -20px;
 }
 
+.top-link {
+    text-decoration: none;
+    color: #4dd7ff;
+}
+
+/* Lista Top 10 como grid / tarjetas */
 .top-lista {
-    margin-top: 25px;
-    padding-left: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr; /* cada item ocupa toda la fila */
+    gap: 0.8rem;
 }
 
+/* Cada item como tarjeta */
 .top-item {
-    margin: 6px 0;
-    opacity: 0.85;
+    background: #191922;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* artista a la izquierda, canción a la derecha */
+    align-items: center;
+    transition: 0.2s ease;
 }
-/*      FIN TOP 10      */
+
+.top-item:hover {
+    background: #232334;
+    transform: translateY(-2px);
+}
+
+/* Artista / canción */
+.top-item em {
+    color: #a1ebff;  /* igual que lanzamientos-nombre */
+    font-style: normal; /* opcional para que no se vea cursiva */
+}
 
 
-
-
-
-/*      FIN MAIN      */
-
-
-
-
-
-
-
-
-
-/*      FOOTER      */
+/* ===================================================== */
+/*                        FOOTER                          */
+/* ===================================================== */
 footer {
-    background: #202020;
-    color: #ccc;
-    padding: 25px;
+    background: #1a1a23;
+    border-top: 2px solid #2f2f46;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 200px;
+
 }
 
-.footer-titulo {
-    margin: 0px 0px -5px;
-}
-
-.footer-rrss {
-    text-align: right;
+footer h3 span {
+    color: #ffffff;
 }
 
 .footer-links {
-    color: #ffffff;
-    text-decoration: none;
+    color: #4dd7ff;
+}
+
+.footer-links:hover {
+    color: #ff2f8b;
 }
 
 .footer-info {
-    margin: -5px 0px
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
 }
-/*      FIN FOOTER      */
+
+
+/* ===================================================== */
+/*                        DETALLES                        */
+/* ===================================================== */
+
+.top-lanzamientos-titulo {
+    color: #ff2f8b;
+    margin-bottom: 0.3rem;
+    margin: 10px;
+}
+
+.top-lanzamientos-ver {
+    text-align: right;
+        margin: -10px 15px 10px 0px;
+
+}
+
+.top-lanzamientos-link {
+    text-decoration: none;
+    color: #ff2f8b;
+    font-weight: bold;
+}
+
+/* Grid de tarjetas */
+.top-lanzamientos-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 1.5rem;
+}
+
+/* Tarjeta individual */
+.top-lanzamiento-item {
+    background: #191922;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-lanzamiento-item:hover {
+    background: #232334;
+    transform: translateY(-4px);
+}
+
+/* Imagen */
+.top-lanzamiento-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+/* Nombre del lanzamiento */
+.top-lanzamiento-nombre {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #4dd7ff;
+}
+
+/* Artista */
+.top-lanzamiento-artista {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.3rem;
+}
+
+/* Audio */
+.top-lanzamiento-audio {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+
+/* ===================================================== */
+/*                        ALTA                           */
+/* ===================================================== */
+
+
+.alta {
+    margin-top: 200px;
+}
+/* Título */
+.alta-titulo {
+    color: #ff2f8b;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Contenedor del formulario */
+.alta-form {
+    background: #191922;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 10px #000;
+}
+
+/* Labels */
+.alta-label {
+    color: #4dd7ff;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+/* Inputs */
+.alta-input {
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 2px solid #333;
+    background: #0f0f16;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.alta-input:focus {
+    border-color: #ff2f8b;
+    outline: none;
+    background: #151520;
+}
+
+/* Botón */
+.alta-boton {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: #ff2f8b;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.alta-boton:hover {
+    background: #ff57a7;
+    transform: translateY(-3px);
+}
