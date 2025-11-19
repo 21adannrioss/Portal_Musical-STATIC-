@@ -1,6 +1,8 @@
 * {
     font-family: 'Courier New', Courier, monospace;
     margin: 0px;
+    padding: 0;
+
 }
 
 /*      HEADER      */
@@ -37,13 +39,287 @@ nav .menu {
 }
 /*      FIN HEADER      */
 
+
+
+
+
+
+
+
 /*      MAIN      */
+
+
+/*      Configuración general      */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0d0f12;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+main {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+}
+/*      Fin Configuración general      */
+
+
+
+
+
+/*      PORTADA      */
+.portada {
+    background: linear-gradient(180deg, #28132f, #0d0f12);
+    padding: 40px;
+    display: flex;
+}
+
+.portada-titulo {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.portada-articulo {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.portada-img {
+    width: 45%;
+    height: auto;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.portada-desc {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.portada-tags {
+    opacity: 0.7;
+    margin-top: 10px;
+}
+/*      FIN PORTADA      */
+
+
+
+
+
+/*      LANZAMIENTOS      */
+.lanzamientos {
+    margin-top: 50px;
+    background: linear-gradient(180deg, #034b55, #0d0f12);
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.lanzamientos-titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.lanzamientos-ver {
+    text-align: right;
+    margin-top: -20px;
+}
+
+.lanzamientos-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 25px;
+}
+
+.lanzamiento-item {
+    background: #16191f;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px #0005;
+    text-align: center;
+}
+
+.lanzamiento-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/*      FIN LANZAMIENTOS      */
+
+
+
+
+
+/*      ARTISTAS DESTACADOS      */
+.artistas {
+    margin-top: 50px;
+    background: linear-gradient(180deg, #52123f, #0d0f12);
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.artistas-ver {
+    text-align: right;
+    margin-top: -20px;
+}
+
+.artistas-lista {
+    list-style: none;
+    margin: 25px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.artista-item {
+    background: #16191f;
+    padding: 15px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 20px #0005;
+}
+
+.artista-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*      FIN ARTISTAS DESTACADOS      */
+
+
+
+
+
+/*      FESTIVALES + ASIDE (Misma fila)      */
+.festivales {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1.2fr; /* Festivales grandes + Aside derecho */
+    gap: 30px;
+}
+
+/* Columna izquierda: tarjetas de festivales */
+.festivales-titulo {
+    grid-column: 1 / 3;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.festivales-ver {
+    grid-column: 1 / 3;
+    text-align: right;
+    margin-top: -30px;
+}
+
+.festival-item {
+    background: #16191f;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 0 20px #0005;
+}
+
+/* 3 tarjetas en fila */
+.festivales {
+    margin-top: 50px;
+}
+.festivales > article {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+/* Imagen del festival */
+.festival-img {
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.festival-detalle {
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+.festival-tags {
+    opacity: 0.7;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+/* Columna derecha: aside */
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.aside-item {
+    background: #16191f;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px #0005;
+    text-align: center;
+}
+
+.aside-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/*      FIN FESTIVALES + ASIDE      */
+
+
+
+
+
+/*      TOP 10      */
+.top {
+    margin-top: 50px;
+    padding: 35px;
+    background: #111318;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #0005;
+}
+
+.top-ver {
+    text-align: right;
+    margin-top: -20px;
+}
+
+.top-lista {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.top-item {
+    margin: 6px 0;
+    opacity: 0.85;
+}
+/*      FIN TOP 10      */
 
 
 
 
 
 /*      FIN MAIN      */
+
+
+
+
+
+
+
+
 
 /*      FOOTER      */
 footer {
