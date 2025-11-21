@@ -145,6 +145,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    align-items: center;
 }
 
 .lanzamiento-item:hover {
@@ -309,12 +310,6 @@ header h1 {
     margin-top: 1.5rem;
 }
 
-@media (max-width: 900px) {
-    .festivales-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 .aside {
     display: flex;
     flex-direction: column;
@@ -342,12 +337,6 @@ header h1 {
     font-size: 1.1rem;
     color: #4dd7ff;
     margin-top: 0.5rem;
-}
-
-.aside-desc {
-    color: #ccc;
-    font-size: 0.9rem;
-    margin-top: 0.3rem;
 }
 
 .aside-link {
@@ -447,12 +436,17 @@ footer h3 span {
 /* ===================================================== */
 
 /* ===================================================== */
+/*                        FIN INDEX                      */
+/* ===================================================== */
+
+
+/* ===================================================== */
 /*                        DETALLES                       */
 /* ===================================================== */
 
 .top-lanzamientos-titulo {
     color: #ff2f8b;
-    margin: 10px;
+    margin: 10px 0px -10px 10px;
 }
 
 .top-lanzamientos-ver {
